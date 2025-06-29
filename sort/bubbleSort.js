@@ -13,4 +13,4 @@ function bubbleSortArray(array) {
   return newArray;
 }
 
-console.log(bubbleSortArray([22, 5, 21, 4, 5]));
+console.log(bubbleSortArray([22, 5, 21, 4, 5, 2, 3, 5, 'dog']));
