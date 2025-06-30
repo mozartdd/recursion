@@ -21,5 +21,18 @@ function fibsRec(n) {
   return fibonacci[n] = fibsRec(n-1) + fibsRec(n-2);
 }
 
-fibsRec(44);
-console.log(fibonacci);
+// Function to sum all even fibonacci numbers below 4 million
+function evenFibs() {
+  let a = 1, b = 2;
+  let sum = 0;
+
+  while (b < 400000000) {
+    if (b % 2 === 0) sum += b;
+    let next = a + b;
+    a = b;
+    b = next;
+  }
+  return sum;
+}
+
+console.log(evenFibs());

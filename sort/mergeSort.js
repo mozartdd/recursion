@@ -13,7 +13,7 @@ function merge(left, right) {
   const result = [];
   let l = 0, r = 0;
 
-  // Merge until one side is exhausted
+  // Merge until one side is empty
   while (l < left.length && r < right.length) {
     if (left[l] < right[r]) {
       result.push(left[l]);
@@ -28,5 +28,4 @@ function merge(left, right) {
   return result.concat(left.slice(l)).concat(right.slice(r));
 }
 
-// Example usage
 console.log(mergeSort([3, 5, 2, 1, 1, 5, 12, 15, 5, 1, 2, 5, 0, 22]));
